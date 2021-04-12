@@ -1,0 +1,139 @@
+.container {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(5, minmax(200px,1fr));
+}
+
+.bar {
+    width: 175px; 
+    --buffer-background: var(--ion-color-tertiary);  
+}
+
+// .skills {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-content: center;
+// }
+
+.skills{
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 50px auto;
+}
+
+.svg {
+    height: 30px;
+    width: 40px;
+    align-self: center;
+}
+
+.name {
+    align-self: center;
+}
+
+@media (min-width: 1160px) {
+    .container {
+        grid-template-columns: repeat(5, minmax(200px,1fr));
+    }
+
+    .skills {
+        margin: 30px;
+    }
+}
+
+@media (min-width: 884px) and (max-width: 1159px) {
+    .container {
+        grid-template-columns: repeat(4, minmax(75px,1fr));
+    }
+
+    .skills {
+        margin: 30px;
+    }
+}
+
+@media (min-width: 730px) and (max-width: 883px) {
+    .container {
+        grid-template-columns: repeat(3, minmax(200px,1fr));
+    }
+
+    .skills {
+        margin: 30px;
+    }
+}
+
+@media (min-width: 608px) and (max-width: 729px) {
+    .container {
+        grid-template-columns: repeat(3, minmax(200px,1fr));
+    }
+
+    .skills {
+        margin: 20px;
+    }
+
+    .svg {
+        height: 25px;
+        width: 30px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .bar{
+        width: 125px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 607px) {
+    .container {
+        grid-template-columns: repeat(2, minmax(40px,1fr));
+        // justify-items: center;
+        padding-left: 5%;
+    }
+
+    .skills {
+        margin: 20px;
+        
+    }
+
+    .svg {
+        height: 25px;
+        width: 30px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .bar{
+        width: 125px;
+        
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        grid-template-columns: repeat(2, minmax(40px,1fr));
+        // justify-items: center;
+        padding-left: 3%;
+    }
+
+    .skills {
+        margin: 15px;
+    }
+
+    .svg {
+        height: 25px;
+        width: 30px;
+    }
+
+    .name {
+        font-size: 12.75px;
+    }
+
+    .bar{
+        width: 115px;
+        
+    }
+}
